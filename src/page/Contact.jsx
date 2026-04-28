@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import cv from "../assets/cv.pdf";
+import { Link } from 'react-router-dom';
 
 
 // import cv from "../assets/cv.pdf";
@@ -15,7 +16,8 @@ const Contact = () => {
         <p className="top-text">
           Whether you have a project or just want to say hi, my inbox is open.
         </p>
-        <a href="/"><p>Home</p></a>
+        <Link to="/">Home</Link>
+
       </div>
 
       <div className="main-box">

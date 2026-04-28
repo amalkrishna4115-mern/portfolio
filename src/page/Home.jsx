@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from 'react'
 import cv from "../assets/cv.pdf";
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -56,9 +57,9 @@ const Home = () => {
       <div className="logo">FULL STACK DEVELOPER</div>
 
       <ul className="nav-links">
-       <a href=""><li>Home</li></a>
+        <Link to="/">Home</Link>
         <a href=""><li>Projects</li></a>
-        <a href="/contact"><li>Contact</li></a>
+        <Link to="/contact">contact</Link>
       </ul>
 
       <button className="btn-outline">Hire Me</button>
