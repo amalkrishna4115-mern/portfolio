@@ -418,12 +418,12 @@ border-radius: 10px;
   }
 }
 /* _______________________________________contact________________ */
-
 body {
   margin: 0;
   background: #0f1117;
   color: white;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 /* TOP */
@@ -452,6 +452,7 @@ body {
   background: #151826;
   padding: 20px;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .left-box {
@@ -477,6 +478,7 @@ textarea {
   border: 1px solid #333;
   color: white;
   border-radius: 6px;
+  box-sizing: border-box;
 }
 
 textarea {
@@ -518,4 +520,53 @@ textarea {
   text-align: center;
   padding: 20px;
   color: #777;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+  .top-section {
+    padding: 40px 15px;
+  }
+
+  .main-box {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .left-box,
+  .right-box {
+    width: 100%;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .card-box {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
 }
