@@ -80,7 +80,7 @@ const Home = () => {
 
         <div className="hero-buttons">
           <button className="btn-primary">View My Work</button>
-          <a href="/contact"><button className="btn-outline">Contact Me</button></a>
+          <Link  to="/contact"><button className="btn-outline">Contact Me</button></Link>
         </div>
       </div>
 
@@ -132,18 +132,14 @@ const Home = () => {
       <div className="grid">
         <div className="card">
           <h3>E-Commerce App</h3>
-          <button className="btn-outline">View</button>
+          <Link to="https://github.com/amalkrishna4115-mern/E-Commerce.git"><button className="btn-outline">View</button></Link>
         </div>
 
         <div className="card">
-          <h3>Task Manager</h3>
-          <button className="btn-outline">View</button>
+          <h3>blog</h3>
+         <Link to="https://github.com/amalkrishna4115-mern/Blog-app-client.git"><button className="btn-outline">View</button></Link>
         </div>
 
-        <div className="card">
-          <h3>Social App</h3>
-          <button className="btn-outline">View</button>
-        </div>
       </div>
     </div>
   
@@ -153,7 +149,13 @@ const Home = () => {
           <h2>Contact Me</h2>
     
           <div className="hero-buttons">
-            <button className="btn1">Send Message</button>
+              <a
+      href="mailto:amalkrishna4115@gmail.com?subject=job Inquiry&body=Hi, I want to contact you."
+      className="email-link"
+    >
+    
+  
+            <button className="btn1">Send Message</button>  </a>
     <a href={cv} download>
       <button className="btn1">Download My CV</button>
     </a>
@@ -176,9 +178,9 @@ const Home = () => {
                 <div className="footer-col">
                   <h4>Navigation</h4>
                   <ul>
-                    <a href=""><li>Home</li></a>
+                    <Link to="/">Home</Link>
                     <a href=""><li>Projects</li></a>
-                    <a href="/contact"><li>Contact</li></a>
+                    <Link to="/contact"><li>Contact</li></Link>
                   </ul>
                 </div>
         

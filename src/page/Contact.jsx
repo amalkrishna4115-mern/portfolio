@@ -59,12 +59,12 @@ const Contact = () => {
       <div className="card-box">
         <div className="card">
           <h3>Open Source</h3>
-         <a href="https://github.com/amalkrishna4115-mern"><p>See my GitHub projects.</p></a> 
+         <Link to="https://github.com/amalkrishna4115-mern"><p>See my GitHub projects.</p></Link> 
         </div>
 
         <div className="card">
           <h3>LinkedIn</h3>
-         <a href=""><p>Connect with me.</p></a> 
+         <Link to="https://www.linkedin.com/in/amal-krishna-m-672870371?utm_source=share_via&utm_content=profile&utm_medium=member_android"><p>Connect with me.</p></Link> 
         </div>
 
         <div className="card">
